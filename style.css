@@ -1,21 +1,25 @@
-* {
+*
+{
     margin: 0;
     box-sizing: border-box;
-  }
-  
-  html {
+}
+
+html
+{
     scroll-snap-type: y mandatory;
-  }
-  
-  body {
+}
+
+body
+{
     color: white;
     background-color: black;
     height: 100vh;
     display: grid;
     place-items: center;
-  }
-  
-  .app__videos {
+}
+
+.app__videos
+{
     position: relative;
     height: 95%;
     background-color: white;
@@ -24,37 +28,43 @@
     max-width: 750px;
     scroll-snap-type: y mandatory;
     border-radius: 20px;
-  }
-  
-  .app__videos::-webkit-scrollbar {
+}
+
+.app__videos::-webkit-scrollbar
+{
     display: none;
-  }
-  
-  .app__videos {
+}
+
+.app__videos
+{
     -ms-overflow-style: none;
     scrollbar-width: none;
-  }
-  
-  .video {
+}
+
+.video
+{
     position: relative;
     height: 100%;
     width: 100%;
     object-fit: cover;
     background-color: white;
     scroll-snap-align: start;
-  }
-  
-  .video__player {
+}
+
+.video__player
+{
     object-fit: contain;
     width: 100%;
     height: 100%;
-  }
-  
-  @media (max-width: 425px) {
-    .app__videos {
-      width: 100%;
-      height: 100%;
-      max-width: 100%;
-      border-radius: 0;
+}
+
+@media screen and (max-width: 800px)
+{
+    .app__videos
+    {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        border-radius: 0;
     }
-  }
+}
