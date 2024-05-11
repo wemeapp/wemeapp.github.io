@@ -15,7 +15,7 @@
             a = document.getElementsByClassName("app__videos")[0];
             
             function f(){
-                fetch("https://abhaytr-server.ml/weme/funny").then(function (response){
+                fetch("https://weme-backend.onrender.com/?t=funny").then(function (response){
                     return response.text();
                 }).then(function (html){
                     a.appendChild(document.createRange().createContextualFragment('<div class="video"><img class="video__player" src="' + html + '" id="init"></img></div>'));
